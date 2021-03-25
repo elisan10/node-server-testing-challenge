@@ -1,5 +1,5 @@
 exports.up = function (knex) {
-  return knex.schema.createTable("gosplel", (tbl) => {
+  return knex.schema.createTable("gospel", (tbl) => {
     tbl.increments();
     tbl.string("book", 255).unique().notNullable();
   });
